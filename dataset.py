@@ -8,7 +8,7 @@ import numpy as np
 
 
 MAX_TOKENS_PER_COLUMN = 200  # 2 of those for CLS and SEP
-MAX_COLUMNS = 6
+MAX_COLUMNS = 20
 MAX_TOKENS = 200  # per table
 
 np.random.seed(42)

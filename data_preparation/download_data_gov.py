@@ -6,7 +6,7 @@ import re
 
 import cfscrape
 
-TOKEN = ""
+TOKEN = "7560135ad22cf68ea64bb48b6d0b7c31"
 scraper = cfscrape.create_scraper()
 
 
