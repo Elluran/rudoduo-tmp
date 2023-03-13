@@ -1,4 +1,5 @@
 from pathlib import Path, PurePath
+import pandas as pd
 
 
 def main():
@@ -38,6 +39,8 @@ def main():
         new_path.write_text(new_data)
 
     filtered_paths = list(Path("data/filteredData3").glob("./*/*.csv"))
+    df = pd.DataFrame({"paths": filtered_paths})
+    df.to_csv("data/filteredData3/files_list.csv", index=False)
     print("Num of result files:", len(filtered_paths))
     print("Total label replacements:", total_replacements)
 
